@@ -112,3 +112,55 @@ h2{
     align-items: center;
     min-width: 40%;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    body{
+        font-size: 15px;
+    }
+    #header img{
+        display: none;
+    }
+    #header{
+        font-size: 70%;
+    }
+    .text{
+        font-size: 20px;
+    }
+    #index{
+        flex-direction: column;
+        max-width: 80%;
+    }
+    #index p{
+        font-size: 25px;        
+    }
+    #index_container img{
+        display: none;
+        padding: 0;
+    }
+    .wrapper{
+        padding: 2%;
+    }
+    .footer{
+        padding-top: 5%;
+        height: 20vh;
+    }
+    
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #header img{
+        max-height: 100px;
+    }
+    #header{
+        font-size: 70%;
+    }
+    #index_container img{
+        display: none;
+    }
+    #index{
+        max-width: 80%;
+    }
+    .footer{
+        height: 20vh;
+    }
+}
