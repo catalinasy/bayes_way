@@ -8,7 +8,6 @@ body{
     margin:0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-
 }
 
 #fork_me{
@@ -146,6 +145,13 @@ h2{
     min-width: 50%;
 }
 
+a:hover{
+  color: #8D785E;
+}
+
+a:visited{
+  color: #ada474;
+}
 h1{
     font-family: 'Shojumaru', cursive;
     font-size: 200%;
