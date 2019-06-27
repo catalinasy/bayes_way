@@ -4,12 +4,18 @@
 font-family: 'Open Sans Condensed', sans-serif; */
 
 body{
-    background-color: #faf6e9;
+    background-color: white;
     margin:0;
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+#fork_me{
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0; 
+}
 #header{
     height:100vh;
     margin: 0;
@@ -17,9 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: stretch;
-    /* background-color: rgb(238, 231, 192);   */
-    background: radial-gradient(ellipse at top, #fcf5ee, transparent),
-                radial-gradient(ellipse at bottom, #dacd88, transparent);
+    background: #fff6c6;
 }
 .title_container{
     display: flex;
@@ -49,9 +53,8 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height:100vh;
-    background: radial-gradient(ellipse at top, #fceaf7, transparent),
-                radial-gradient(ellipse at bottom, #dacd88, transparent);
-
+    background: rgb(245, 239, 205);
+    color: black
 }
 
 #index_container img{
@@ -72,21 +75,36 @@ body{
 }
 
 
-a{
+#index a{
     text-decoration: none;
     font-size: 25px;
     padding: 2%;
-    color: black;
+    color: black
 }
 
 .wrapper{
     margin: 0;
     padding: 0;
     padding: 5% 20%;
+    background-image: URL('../img/background-cloud.png');
+    background-size: 20%;
+    background-position: right 100px top 100px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
 }
 
+#index li{
+    margin-bottom: 2%;
+    
+}
 li{
-    margin-bottom: 2%;;
+    margin-bottom: 2%;
+}
+ol a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 2%;
+    color: black;
 }
 h2{
     color: #ada474;
@@ -96,10 +114,15 @@ h2{
 
 .footer{
     height:40vh;
-    background: #f0d212;
+    background: #f30202;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url('../img/background-image.png');
+    background-size: 3%;
+    background-repeat: repeat-x ;
+    background-position: bottom;
+    padding-top: 2%;
 }
 .footer img{
     height: 100%;
@@ -107,31 +130,81 @@ h2{
 
 .text_container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 40%;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin: 2% 5%;
+    min-width: 50%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-    body{
-        font-size: 15px;
-    }
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 300%;
+    margin:0;
+    padding-bottom: 10%;
+    align-self: flex-start;
+    min-width: 50%;;
+}
+
+.name{
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    margin-left: 10%;
+    max-width: 30%;
+    border-bottom: #cec797 solid 3px;
+    padding: 5px;
+
+}
+
+#spawned_by{
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+
+#thanks{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#thanks ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+}
+
+ul li{
+    min-width: 50%;
+    padding-bottom:20%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait){
+
     #header img{
         display: none;
     }
     #header{
         font-size: 70%;
+        height: 30vh;
+    }
+    .title_container p{
+        padding: 0;
+        margin: 0;
     }
     .text{
-        font-size: 20px;
+        display: none;
     }
     #index{
         flex-direction: column;
         max-width: 80%;
     }
     #index p{
-        font-size: 25px;        
+        font-size: 20px;        
+    }
+    li{
+        font-size: 15px;
     }
     #index_container img{
         display: none;
