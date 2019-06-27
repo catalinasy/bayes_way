@@ -84,17 +84,24 @@ body{
 
 .wrapper{
     margin: 0;
-    padding: 0;
     padding: 5% 20%;
-    background-image: URL('../img/background-cloud.png');
-    background-size: 20%;
-    background-position: right 100px top 100px;
+    background-position:
+        top 140px left 5px,
+        top 450px right 50px,
+        bottom 200px right 50px,
+        bottom 700px left 5px;
+    background-size: 15%;
     background-repeat: no-repeat;
-    opacity: 0.4;
-}
+    background-image:
+        url(../img/background-cloud1.png),
+        url(../img/background-cloud2.png),
+        url(../img/background-cloud3.png),
+        url(../img/background-cloud4.png);
+    }
 
 #index li{
     margin-bottom: 2%;
+    
     
 }
 li{
@@ -181,7 +188,6 @@ ul li{
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait){
-
     #header img{
         display: none;
     }
@@ -201,26 +207,70 @@ ul li{
         max-width: 80%;
     }
     #index p{
-        font-size: 20px;        
+        font-size: 20px;
     }
-    li{
+    #index a{
+        font-size: 18px;
+    }
+    ol a{
         font-size: 15px;
+        padding-bottom: 20%; 
+    }
+    h2{
+        font-size: 25px;
     }
     #index_container img{
         display: none;
         padding: 0;
     }
     .wrapper{
-        padding: 2%;
+        padding: 5% 10%;
+        font-size: 10px;
     }
     .footer{
         padding-top: 5%;
         height: 20vh;
     }
+    .footer img{
+        display: none;
+    }
+    .text_container{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .footer a{
+        font-size: 20px;
+    }
+    .name{
+        padding: 0;
+    }
+    #thanks{
+        width: 50%;
+    }
+    #spawned_by{
+        margin-left: 10%;
+        height: 100%;
+    }
+    #thanks ul{
+        height: 50%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    #thanks li{
+        padding: 0 0 5% 0;
+    }
     
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     #header img{
         max-height: 100px;
     }
@@ -234,6 +284,14 @@ ul li{
         max-width: 80%;
     }
     .footer{
-        height: 20vh;
+        height: 30vh;
     }
+    #thanks ul{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape){
+    
 }
