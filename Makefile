@@ -1,5 +1,5 @@
 SRC_DIR = src
-BUILD_DIR = build
+BUILD_DIR = docs
 IMG_DIR = img
 NODE_BIN_PATH = ./node_modules/.bin
 
