@@ -154,6 +154,8 @@ h2{
         align-self: flex-start;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -ms-flex-align: stretch;
+        align-items: stretch;
     margin: 2% 5%;
     min-width: 50%;
 }
@@ -211,6 +213,8 @@ h1{
 #thanks ul li{
     min-width: 50%;
 }
+/* 
+portrait orientation on mobile */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait){
     #header img{
@@ -311,6 +315,61 @@ h1{
 
 }
 
+/* Landscape orientation on mobile  */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (orientation:landscape){
+    .title_container p{
+        margin: 0;
+    }
+    .text{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    #index h1{
+        padding: 0;
+    }
+    .title_container img{
+        display: none;
+    }
+    .footer{
+        height: 70vh;
+    }
+    .text_container{
+        width: 100%;
+    }
+    #thanks ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    #thanks{
+        width: 70%;
+    }
+    #created_by{
+        width: 30%;
+        margin: 0;
+        min-height: 100%;
+    }
+    #created_by .name{
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        margin-top: 50%;
+        position: relative;
+        top:20%
+    }
+    h1{
+        font-size: 20px
+    }
+
+    .footer img{
+        display: none;
+    }
+
+}
+
+/* portrait orientation on tablet/ipad */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     #header img{
         max-height: 100px;
@@ -337,7 +396,7 @@ h1{
     }
 
 }
-
+/* landscape orientation on tablet/ipad */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape){
     .title_container p{
         font-size: 70%;
