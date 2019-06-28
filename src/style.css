@@ -76,20 +76,12 @@ body{
     padding-bottom: 5%
 }
 
-
-#index a{
-    text-decoration: none;
-    font-size: 25px;
-    padding: 2%;
-    color: black
-}
-
 .wrapper{
     margin: 0;
     padding: 5% 20%;
     background-position:
         top 140px left 5px,
-        top 450px right 50px,
+        top 410px right 50px,
         bottom 200px right 50px,
         bottom 700px left 5px;
     background-size: 15%;
@@ -109,7 +101,7 @@ body{
 li{
     margin-bottom: 2%;
 }
-ol a{
+a{
     text-decoration: none;
     font-size: 25px;
     padding: 2%;
@@ -146,11 +138,11 @@ h2{
 }
 
 a:hover{
-  color: #8D785E;
+  color: rgb(99, 88, 75);
 }
 
 a:visited{
-  color: #ada474;
+  color: #6b5c17;
 }
 h1{
     font-family: 'Shojumaru', cursive;
@@ -193,7 +185,6 @@ h1{
 
 #thanks ul li{
     min-width: 50%;
-    padding-bottom:20%;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait){
@@ -201,12 +192,20 @@ h1{
         display: none;
     }
     #header{
-        font-size: 70%;
         height: 30vh;
+        background-image: 
+            url('../img/imageA.png'),
+            url('../img/imageB.png');
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: top 120px left 3px,
+                             top 120px right 10px;
+
     }
     .title_container p{
         padding: 0;
         margin: 0;
+        font-size: 60%;
     }
     .text{
         display: none;
@@ -232,13 +231,16 @@ h1{
         display: none;
         padding: 0;
     }
+    #index_container{
+        height: 70vh;
+    }
     .wrapper{
         padding: 5% 10%;
         font-size: 10px;
     }
     .footer{
         padding-top: 5%;
-        height: 20vh;
+        height: 30vh;
     }
     .footer img{
         display: none;
@@ -251,7 +253,7 @@ h1{
         width: 100%;
     }
     h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .footer a{
         font-size: 20px;
@@ -265,6 +267,9 @@ h1{
     #spawned_by{
         margin-left: 10%;
         height: 100%;
+    }
+    #created_by{
+        text-align: center;
     }
     #thanks ul{
         height: 50%;
@@ -297,6 +302,10 @@ h1{
     }
     #thanks ul{
         flex-direction: column;
+        margin: 0
+    }
+    #thanks li{
+        padding-bottom: 8%;
     }
 
 }
@@ -319,6 +328,9 @@ h1{
 
     #index {
         padding-left: 5%;
+    }
+    #thanks ul{
+        width: 110%;
     }
     
 }
