@@ -87,10 +87,10 @@ body{
     background-size: 15%;
     background-repeat: no-repeat;
     background-image:
-        url(../img/background-cloud1.png),
-        url(../img/background-cloud2.png),
-        url(../img/background-cloud3.png),
-        url(../img/background-cloud4.png);
+        url(./img/background-cloud1.png),
+        url(./img/background-cloud2.png),
+        url(./img/background-cloud3.png),
+        url(./img/background-cloud4.png);
     }
 
 #index li{
@@ -119,7 +119,7 @@ h2{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url('../img/background-image.png');
+    background-image: url('./img/background-image.png');
     background-size: 10%;
     background-repeat: repeat-x ;
     background-position: bottom;
