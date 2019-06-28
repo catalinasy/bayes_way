@@ -182,7 +182,7 @@ h1{
     display: flex;
 }
 
-ul li{
+#thanks ul li{
     min-width: 50%;
     padding-bottom:20%;
 }
@@ -293,5 +293,23 @@ ul li{
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape){
+    .title_container p{
+        font-size: 70%;
+    }
+    #header img{
+        height: 50%;
+    }
+
+    .text{
+        font-size: 150%;
+    }
+
+    #index p{
+        font-size: 150%;
+    }
+
+    #index {
+        padding-left: 5%;
+    }
     
 }
